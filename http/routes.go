@@ -13,5 +13,5 @@ func addRoutes(
 	mux.Handle("/", getEndpoints(logger))
 	mux.Handle("/__lbheartbeat__", getHeartbeat(logger))
 	mux.Handle("/generate/", postGenerateBasemaps(logger))
-	mux.Handle("/download/{id}", getDownloadBasemap(logger))
+	mux.Handle("/get-url/{id}", getBasemapS3URL(logger))
 }

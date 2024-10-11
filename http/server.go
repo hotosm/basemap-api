@@ -94,6 +94,16 @@ func BasemapApi() {
 			return "localhost"
 		case "BASEMAP_LOG_LEVEL":
 			return "DEBUG"
+		case "BASEMAP_S3_ENDPOINT":
+			return "xxx"
+		case "BASEMAP_S3_BUCKET":
+			return "xxx"
+		case "BASEMAP_S3_PATH_PREFIX":
+			return "xxx"
+		case "BASEMAP_S3_ACCESS_KEY":
+			return "xxx"
+		case "BASEMAP_S3_SECRET_KEY":
+			return "xxx"
 		default:
 			return ""
 		}
